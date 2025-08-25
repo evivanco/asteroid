@@ -133,7 +133,7 @@ public class AsteroidsWorld extends World {
         // En oleadas bajas: más L; luego mezcla. S se generará al destruir L y M.
         int numLarge = Math.max(3, budget);
         for (int i = 0; i < numLarge; i++) {
-            spawnAsteroidSafely(Size.LARGE);
+            spawnAsteroidSafely(Asteroid.Size.LARGE);
         }
 
         showCenteredMessage("Oleada " + wave, 32);
@@ -180,7 +180,7 @@ public class AsteroidsWorld extends World {
     }
 
     /** Crea un asteroide del tamaño dado en una posición segura respecto al Player. */
-    private void spawnAsteroidSafely(Size size) {
+    private void spawnAsteroidSafely(Asteroid.Size size) {
         // Intentar esquinas y bordes alejados del jugador
         int[][] candidates = new int[][] {
             {rng.nextInt(WIDTH), 0},

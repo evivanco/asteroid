@@ -1,7 +1,42 @@
 #BlueJ class context
 comment0.target=Asteroid
-comment1.params=
-comment1.target=void\ act()
-comment2.params=size
-comment2.target=Asteroid(Size)
-numComments=3
+comment0.text=\r\n\ Asteroide\ con\ tres\ tama\u00F1os\ (L/M/S)\:\r\n\ -\ Movimiento\ con\ velocidad\ aleatoria\ y\ rotaci\u00F3n.\r\n\ -\ Wrapping\ toroidal.\r\n\ -\ Divisi\u00F3n\ al\ recibir\ impacto\ de\ Bullet\ (L->2M,\ M->2S,\ S->nada).\r\n\ -\ Asigna\ puntos\ al\ destruirse\ (L\=20,\ M\=50,\ S\=100).\r\n\r\n\ Contratos\:\r\n\ \ -\ Bullet\:\ al\ colisionar\ llama\ a\ asteroid.onHitBy(this).\r\n\ \ -\ AsteroidsWorld\:\ expone\ addScore(int)\ y\ rng()\ para\ coherencia\ de\ aleatoriedad.\r\n
+comment1.params=size
+comment1.target=Asteroid(Asteroid.Size)
+comment10.params=s
+comment10.target=double\ vMaxFor(Asteroid.Size)
+comment11.params=s
+comment11.target=int\ pointsFor(Asteroid.Size)
+comment12.params=rng\ a\ b
+comment12.target=double\ randomInRange(java.util.Random,\ double,\ double)
+comment13.params=
+comment13.target=void\ buildSprite()
+comment13.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Visual\ (pol\u00EDgono\ \u201Crocoso\u201D)\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment14.params=
+comment14.target=Asteroid.Size\ getSizeType()
+comment14.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Getters\ \u00FAtiles\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment15.params=
+comment15.target=int\ getRadius()
+comment16.params=
+comment16.target=double\ getVX()
+comment17.params=
+comment17.target=double\ getVY()
+comment2.params=w
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=b
+comment4.target=void\ onHitBy(Bullet)
+comment4.text=Llamado\ por\ Bullet\ al\ colisionar.
+comment5.params=childSize\ count\ source
+comment5.target=void\ spawnChildren(Asteroid.Size,\ int,\ Bullet)
+comment6.params=
+comment6.target=void\ wrapAround()
+comment6.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Movimiento\ y\ utilidades\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment7.params=vx\ vy
+comment7.target=void\ setVelocity(double,\ double)
+comment8.params=rng
+comment8.target=void\ randomizeRotation(java.util.Random)
+comment9.params=s
+comment9.target=double\ vMinFor(Asteroid.Size)
+numComments=18

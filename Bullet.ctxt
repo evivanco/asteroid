@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Bullet
+comment0.text=\r\n\ Proyectil\ del\ jugador\ (o\ de\ otras\ entidades\ si\ se\ desea).\r\n\ -\ Movimiento\ rectil\u00EDneo\ uniforme\ con\ posici\u00F3n\ subp\u00EDxel.\r\n\ -\ Wrapping\ toroidal.\r\n\ -\ TTL\ (time-to-live)\ y\ autodestrucci\u00F3n.\r\n\ -\ Breve\ "muzzle\ grace"\ inicial\ para\ no\ colisionar\ con\ su\ due\u00F1o.\r\n\r\n\ Contratos\ con\ otras\ clases\:\r\n\ \ -\ Asteroid\:\ debe\ implementar\ public\ void\ onHitBy(Bullet\ b)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ (se\ encargar\u00E1\ de\ dividirse/otorgar\ puntos\ y\ removerse).\r\n\ \ -\ El\ mundo\ es\ AsteroidsWorld,\ pero\ esta\ clase\ no\ depende\ de\ detalles\ del\ mundo.\r\n
+comment1.params=vx\ vy\ ttlFrames\ owner
+comment1.target=Bullet(double,\ double,\ int,\ greenfoot.Actor)
+comment1.text=\r\n\ @param\ vx\ px/frame\ en\ X\r\n\ @param\ vy\ px/frame\ en\ Y\r\n\ @param\ ttlFrames\ frames\ de\ vida\ (si\ <\=0,\ no\ expira)\r\n\ @param\ owner\ referencia\ al\ actor\ que\ dispar\u00F3\ (puede\ ser\ null)\r\n
+comment2.params=w
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ wrapAround()
+comment4.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Utilidades\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment5.params=
+comment5.target=void\ buildSprite()
+comment6.params=
+comment6.target=double\ getVX()
+comment6.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Getters\ \u00FAtiles\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment7.params=
+comment7.target=double\ getVY()
+comment8.params=
+comment8.target=greenfoot.Actor\ getOwner()
+numComments=9

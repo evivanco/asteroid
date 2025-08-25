@@ -55,6 +55,6 @@ comment8.params=
 comment8.target=void\ spawnPlayerSafely()
 comment8.text=Crea\ el\ jugador\ en\ el\ centro\ o\ en\ la\ posici\u00F3n\ segura\ m\u00E1s\ cercana.
 comment9.params=size
-comment9.target=void\ spawnAsteroidSafely(Size)
+comment9.target=void\ spawnAsteroidSafely(Asteroid.Size)
 comment9.text=Crea\ un\ asteroide\ del\ tama\u00F1o\ dado\ en\ una\ posici\u00F3n\ segura\ respecto\ al\ Player.
 numComments=22
