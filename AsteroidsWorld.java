@@ -90,6 +90,7 @@ public class AsteroidsWorld extends World {
                 startGame();
             }
         }
+
     }
 
     /* ===================== Ciclo de vida del juego ===================== */
@@ -139,6 +140,18 @@ public class AsteroidsWorld extends World {
         showCenteredMessage("Oleada " + wave, 32);
         nextWaveDelayFrames = 45;
         waveClearedBanner = true;
+        
+                // Dentro de AsteroidsWorld.spawnNextWave()
+        if (rng.nextDouble() < 0.15) { // 15% de probabilidad por oleada
+            UFO.Type type = (wave >= 4 && rng.nextBoolean()) ? UFO.Type.SMALL : UFO.Type.LARGE;
+            double acc   = (type == UFO.Type.SMALL) ? 0.65 + 0.1*wave : 0.30 + 0.07*wave;
+            acc = Math.min(0.95, acc);
+            UFO ufo = new UFO(type, acc);
+            // Lo agregamos justo fuera de pantalla para que "entre"
+            int y = 40 + rng.nextInt(getHeight() - 80);
+            int x = rng.nextBoolean() ? -1 : getWidth() + 1; // bordes
+            addObject(ufo, x, y);
+        }        
     }
 
     /* ========================= API pública (desde actores) ========================= */

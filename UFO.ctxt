@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=UFO
+comment0.text=\r\n\ OVNI\ enemigo\:\r\n\ -\ Se\ desplaza\ lateralmente\ (L->R\ o\ R->L)\ con\ leve\ deriva\ vertical.\r\n\ -\ Dispara\ hacia\ el\ Player\ con\ precisi\u00F3n\ configurable\ (ruido\ angular).\r\n\ -\ TTL\ (desaparece\ tras\ un\ tiempo)\ y\ wrapping\ opcional.\r\n\ -\ Muere\ si\ lo\ golpea\ una\ Bullet\ del\ jugador\ (otorga\ puntos).\r\n\ -\ Si\ choca\ con\ un\ Asteroid,\ ambos\ se\ destruyen\ (sin\ puntos).\r\n\r\n\ Requiere\:\r\n\ \ -\ AsteroidsWorld\ con\ rng()\ y\ addScore(int).\r\n\ \ -\ PlayerShip\ (para\ apuntar)\ y\ Bullet\ (del\ jugador).\r\n\ \ -\ EnemyBullet\ (definida\ m\u00E1s\ abajo)\ para\ golpear\ al\ jugador.\r\n
+comment1.params=type\ accuracy
+comment1.target=UFO(UFO.Type,\ double)
+comment2.params=w
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ shootAtPlayer()
+comment4.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Disparo\ y\ muerte\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment5.params=playerBullet
+comment5.target=void\ onKilledByPlayerBullet(Bullet)
+comment6.params=
+comment6.target=void\ buildSprite()
+comment6.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Visual\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment7.params=a\ b
+comment7.target=double\ rngRange(double,\ double)
+comment7.text=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\ Utilidades\ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment8.params=v
+comment8.target=double\ clamp01(double)
+numComments=9

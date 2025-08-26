@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Particles
+comment0.text=Utilidades\ para\ crear\ r\u00E1fagas\ de\ part\u00EDculas.
+comment1.params=
+comment1.target=Particles()
+comment2.params=w\ x\ y\ scale
+comment2.target=void\ spawnExplosion(greenfoot.World,\ int,\ int,\ int)
+comment2.text=\ \r\n\ Explosi\u00F3n\ mixta\ (chispas\ y\ humo)\ en\ (x,y).\r\n\ @param\ scale\ 1..n\ ~\ tama\u00F1o/energ\u00EDa\ de\ la\ explosi\u00F3n\ (10\ recomendado\ para\ asteroide\ S,\ 14\ M,\ 20\ L).\r\n
+comment3.params=rng\ a\ b
+comment3.target=double\ rngRange(java.util.Random,\ double,\ double)
+numComments=4

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=HUD
+comment0.text=\r\n\ HUD\ compacto\ que\ muestra\ Puntaje,\ Vidas\ y\ Oleada.\r\n\ Se\ auto-actualiza\ leyendo\ el\ estado\ del\ AsteroidsWorld.\r\n
+comment1.params=w
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=world
+comment3.target=void\ redraw(AsteroidsWorld)
+comment4.params=g\ x\ y\ w\ h\ r
+comment4.target=void\ fillRoundedRect(greenfoot.GreenfootImage,\ int,\ int,\ int,\ int,\ int)
+comment4.text=Rellena\ un\ rect\u00E1ngulo\ con\ esquinas\ redondeadas\ usando\ fillRect\ +\ fillOval.
+comment5.params=g\ x\ y\ w\ h\ r
+comment5.target=void\ drawRoundedRect(greenfoot.GreenfootImage,\ int,\ int,\ int,\ int,\ int)
+comment5.text=Traza\ el\ borde\ de\ un\ rect\u00E1ngulo\ redondeado\ con\ drawLine\ +\ drawOval.
+numComments=6

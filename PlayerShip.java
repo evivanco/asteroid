@@ -176,7 +176,7 @@ public class PlayerShip extends Actor {
         AsteroidsWorld world = (AsteroidsWorld)getWorld();
         // Notificar pérdida de vida ANTES de eliminar el actor
         world.loseLife();
-
+        Particles.spawnExplosion(getWorld(), getX(), getY(), 16); // nave ~mediana
         // Sacar la nave
         getWorld().removeObject(this);
         // El respawn lo gestiona el mundo.

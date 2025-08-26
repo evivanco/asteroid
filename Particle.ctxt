@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Particle
+comment0.text=\r\n\ Part\u00EDcula\ simple\:\r\n\ -\ Se\ mueve\ con\ velocidad\ inicial,\ aplica\ fricci\u00F3n\ leve\ y\ desvanece\ alpha.\r\n\ -\ TTL\ en\ frames;\ al\ expirar\ se\ elimina.\r\n\ -\ Wrapping\ para\ que\ no\ desaparezca\ de\ golpe\ en\ bordes.\r\n
+comment1.params=color\ radius\ vx\ vy\ ttl\ spin
+comment1.target=Particle(greenfoot.Color,\ int,\ double,\ double,\ int,\ double)
+comment1.text=\r\n\ @param\ color\ \ color\ inicial\ (incluye\ alpha)\r\n\ @param\ radius\ radio\ del\ c\u00EDrculo\ (px)\r\n\ @param\ vx\ \ \ \ \ velocidad\ inicial\ X\ (px/frame)\r\n\ @param\ vy\ \ \ \ \ velocidad\ inicial\ Y\ (px/frame)\r\n\ @param\ ttl\ \ \ \ frames\ de\ vida\r\n\ @param\ spin\ \ \ grados\ de\ giro\ por\ frame\ (puede\ ser\ 0)\r\n
+comment2.params=w
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ wrap()
+numComments=5
